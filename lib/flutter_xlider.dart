@@ -439,7 +439,7 @@ class _FlutterSliderState extends State<FlutterSlider>
                 parent: _rightTooltipAnimationController,
                 curve: Curves.fastOutSlowIn));
 
-    WidgetsBinding.instance!.addPostFrameCallback((_) {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
       _renderBoxInitialization();
 
       _arrangeHandlersPosition();
@@ -2731,4 +2731,5 @@ class FlutterSliderRangeStep {
 }
 
 enum FlutterSliderTooltipDirection { top, left, right }
+
 enum FlutterSliderHatchMarkAlignment { left, right }
